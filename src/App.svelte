@@ -106,9 +106,7 @@
 
   function possibleTie(event) {
     if (event.key === ' ') {
-      console.log("1st test successful");
       if (rock === true || paper === true || scissors === true) {
-        console.log("2nd test successful");
         let randomBool = generateRandomBooleanValue();
         if (randomBool === true) {
           if (generateRandomNumber(1, 1000) === 1000) {
@@ -127,47 +125,10 @@
     }
     
   }
-  
-  function toggleMode() {
 
-  }
-  /*function calculateMinimumWinsNecessary(lengthOfRound) {
-    if (lengthOfRound % 2 == 0){
-      return Math.round(lengthOfRound / 2) + 1;
-    }
-    else {
-      return Math.round(lengthOfRound / 2);
-    }; 
-  };
-
-  function generateWinLossList(lengthOfRound) {
-    let actualWins = generateRandomrandomBool(
-      calculateMinimumWinsNecessary(lengthOfRound), lengthOfRound);
-    let losses = lengthOfRound - actualWins;
-    let winLossList = [];
-    for (let i = 0; i < lengthOfRound; i++) {
-      let winOrLoss = generateRandomBooleanValue()
-      if (winOrLoss == true) {
-        if (actualWins > 0) {
-          winLossList.push("win");
-          // since win was added to list, subtract remaining wins
-          actualWins -= 1;
-        };
-      }
-      else {
-        if (losses > 0) {
-          winLossList.push("loss");
-          // since loss was added to list, subtract remaining losses
-          losses -= 1;
-        };
-
-      };
-      
-    };
-    return winLossList
-  };
-  console.log(generateWinLossList(10))*/
   function restartGame() {
+    // handles resetting all the variables post game so that styles and text from
+    // the old game won't carry over to the new game
     if (rock == true || paper == true || scissors == true) {
       return
     };
