@@ -1,1 +1,1 @@
-web: npm run dev -- --port 8000
+web: npm run serve
