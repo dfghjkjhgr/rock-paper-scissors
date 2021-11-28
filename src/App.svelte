@@ -208,7 +208,7 @@
     justify-self: center;
     align-self: center;
     grid-column: 1 / -1;
-    font-size: min(5vw, 30px);
+    font-size: min(6vw, 40px);
     font-family: 'Outfit', sans-serif;
   }
 
@@ -222,7 +222,7 @@
 
   #opening-text {
     width: 60vw;
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
   }
   #rock-paper-scissors-interface {
@@ -300,9 +300,9 @@
       grid-column: 2;
     }
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 650px) {
     #opening-text {
-      font-size: min(4vw, 12px)
+      font-size: min(4vw, 15px)
     }
   }
   
